@@ -5,9 +5,11 @@ created at 1/13/2023
 
 ### Project Title
 BIKESHARE PROJECT
+
 ### Description
 this project is designed to uncover bike share usage patterns. It will compare the system usage between three large cities: Chicago, New York City, and Washington, DC.
 
+### used files with this project
 Files used
 Chicago.csv
 New York City.csv
