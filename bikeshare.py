@@ -75,7 +75,6 @@ def load_data(city, month, day):
 
 
 
-
     #filtering by month
     if month != 'all':
         months = [ 'january', 'february','march','april', 'may','june' ]
@@ -193,19 +192,25 @@ def user_stats(df,city):
 def raw_data(df):
     print('\nRaw data is available to check\n')
     index=0
+
     user_input = input('would you like to display 6 rows or raw data?, YES or NO\n').lower()
     if user_input not in ['yes','no']:
         print('that\'s invalid choice, please type yes or no')
         user_input = input('would you like to display 6 rows or raw data?, YES or NO\n').lower()
+
+
     elif user_input != 'yes':
         print('thank you')
+
     else:
         while index+6 < df.shape[0]:
             print(df.iloc[index:index+6])
             index += 5
             user_input = input('would you like to display another 6 rows or a raw data?\n').lower()
+
             if user_input !='yes':
                 print('thank you')
+                
                 break
 
 
